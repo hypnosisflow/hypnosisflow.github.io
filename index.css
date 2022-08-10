@@ -1,0 +1,101 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    color: whitesmoke
+}
+
+body {
+    background: url('./img/bg_blue.webp');
+    background-color: darkblue  ;
+}
+
+.about-section {
+    padding: 15px 5px
+}
+.header-title {
+    position: relative;
+    padding: 10px 20px;   
+    font-size: 14px;
+}
+
+.header-title h2 {
+    font-weight: 400;
+}
+
+.header-title span {
+    position: absolute;
+    top: 38px;
+    left: 75px;
+    color: blue;
+    font-weight: 600;
+}
+
+.descr-section {
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+    padding-top: 60px;
+}
+
+.descr-content {
+    width: 660px;
+}
+
+.radio-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 
+.skills {
+    
+} */
+/* 
+body {
+    background: ;
+} */
+
+.container {
+    max-width: 540px;
+}
+.name {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.separation-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.projects-content { 
+    width: 200px;
+    height: 75px;
+    display: block;
+    padding-bottom: 25px;
+}
+
+.footer-section {
+    /* display: flex; */
+    justify-content: center;
+    padding: 15px;;
+}
+.footer-content {
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+.footer-links a {
+    color: blue;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all .5s ease-in-out
+}
+
+.footer-links a:hover {
+    color: cyan;
+}
