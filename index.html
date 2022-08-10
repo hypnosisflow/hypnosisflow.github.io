@@ -18,7 +18,7 @@
 <body>
     <main>
        
-        <header>
+        <header class=>
         <div class="pre-wrap">
             <div id="preloader" class="active">
                 <div id="lottie-pre" class="lottie-pre">
@@ -26,18 +26,37 @@
                 </div>
             </div>
         </div>
-        <div id="header" class="header-title">
-            <h2>hypnosisflow</h2>
-            <span>web-development.</span>
-            
-        </div>
-            <!-- <img src="./img/me.jpg" alt="me" /> -->
         </header>
+            <div class="nav-wrap">
+                <div id="header" class="header-title">
+                    <h2>hypnosisflow</h2>
+                    <span>web-development.</span>
+                </div>
+            </div>
+       
+            <nav class="navbar flex-row-reverse">
+               
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+            </nav>
+            <!-- <img src="./img/me.jpg" alt="me" /> -->
+        
 
         <div id="page-wrap" class="container main-wrapp ">
             <div class="descr-section">
                 <div class="descr-content">
-          
                     <p>
                         philosophy behind <b>hypnosisflow</b> is in creating mind touching products in all aspects, from the first page render to the last button clicked.
                     </p>
@@ -49,6 +68,7 @@
                         <span class="name">-Artem</span>
                     </p>
                 </div>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
             </div>
 
             <div class="about-section">
@@ -58,32 +78,34 @@
                             <h3>
                                 skills 
                             </h3>
-                            <span>html, css, sass</span>
-                            <br>
-                            <span>javascript, jquery, react</span>
-                            <br>
-                            <span>git, webpack</span>
-                            <br>
-                            <span>redux</span>
+                            <div class="skills-descr">
+                                <span>html ~ css ~ sass ~ javascript ~ typescript ~ react ~ webpack ~ redux ~ git ( libraries bootstrap / tailwind / jquery )
+                                </span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-6 col-projects">
                         <div class="projects">
                             <h3>
                                 workflow
                             </h3>
-                            <div class="projects-desct">
+                            <div class="projects-descr">
                                 in my work i try to express my vision on digital industry.
+                            </div>
+                         
+                            <div class="d-grid gap-4 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button">Button</button>
                             </div>
                         </div>
                     </div>
             </div>
             </div>
            <section class="contact">
-            <div class="separation-wrapper">
-                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_tno6cg2w.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-            </div>
             <div class="footer-section">
+                <div class="separation-wrapper">
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_tno6cg2w.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                </div>
                 <div class="footer-content">
                     <!-- <span>< --- ></span> -->
                 </div>
