@@ -11,11 +11,11 @@ window.addEventListener("DOMContentLoaded", function(e) {
         }, 1000);
         setTimeout(() => {
             mainComponent.classList.add("active");
-        }, 2500); 
+        }, 3000); 
         setTimeout(() => {
             lottie.classList.remove("active");
             lottie.classList.add("fade-out");
-        }, 1250);
+        }, 2000);
     }
     contentLoad();
 
