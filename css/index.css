@@ -5,25 +5,71 @@
     color: black;
 }
 body {
+    position: relative;
     width: 100%;
     max-width: 960px;
     margin: 0 auto; 
     /* background: url('./img/bg_blue.webp'); */
     background-color: whitesmoke;
 }
-header {
-    position: fixed;
-    width: 960px;
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
+
+.header__navbar {
+    /* width: 960px; */
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.header-title {
+    /* height: 107px; */
+    display: flex;
+}
+
+.header-title h2 {
+    display: flex;
+    align-content: flex-start;
+    font-weight: 400;
+}
+
+.header-title span {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    color: blue;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.header__list {
+    /* height: 107px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    z-index: 0;
+}
+
 nav {
     width: 100%;
 }
-.nav-item a {
-    color: palevioletred;
-    font-weight: 700;
-    text-transform: uppercase;
+.nav-item {
+    padding: 0 20px;
 }
 
+.nav-item a {
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 21px;
+    /* text-transform: ; */
+    transition: all .5s ease-in-out;
+}
+.nav-item a:hover {
+    color: red;
+}
 .pre-wrap {
     width: 100%;
 }
@@ -35,13 +81,11 @@ nav {
 .main-wrapp {
     opacity: 0;
     transition: all 1.5s ease;
-    z-index: 10;
-    /* background-color: rgba(0, 0, 0, 0.35); */
+    z-index: 999999;
     border-radius: 10px;
     padding: 30px 10px;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-bottom: 0px;
-    font-weight: 700;
 }
 
 .fade-out {
@@ -51,6 +95,7 @@ nav {
 
 .about-section {
     padding: 30px 5px;
+    
     /* border: 1px solid #fff; */
     /* background-color: rgba(0, 0, 0, 0.35); */
 }
@@ -59,36 +104,18 @@ nav {
     padding: 15px 5px;
 }
 
-.header-title {
-    opacity: 0;
-    position: relative;
-    padding: 10px 20px;   
-    font-size: 14px;
-    transition: all 1s ease;
-}
-
-.header-title h2 {
-
-    font-weight: 400;
-}
-
-.header-title span {
-    position: fixed;
-    top: 38px;
-    left: 410px;
-    color: blue;
-    font-weight: 600;
-    font-size: 16px;
-}
-
 .descr-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 15px 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
     padding-top: 60px;
-    /* border: 1px solid #fff; */
+    box-shadow: 0px 0px 20px navy;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 1);
 }
+
 
 .radio-section {
     display: flex;
@@ -110,51 +137,90 @@ nav {
 
 /* SKILLS SECTION */
 
-.skills-descr {
+.about-section {
+    box-shadow: 0px 0px 20px navy;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.skills-content {
     padding: 15px 0;
+}
+
+.skills-text {
+    text-align: center;
 }
 
 .tech-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-
-    
+    text-align: center;    
 }
 .icons-row {
+    background-color: #fffa;
+
+    margin-top: 25px;
     padding: 10px 0;
 }
 .icon-item {
     padding: 10px 5px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
-.projects-content { 
-    width: 200px;
-    height: 75px;
-    display: block;
-    padding-bottom: 25px;
-}
-
-.projects-descr {
+.projects-content {
     padding: 15px 0;
     padding-bottom: 40px;
 }
 
-.projects-descr img {
-    width: 200px;
+.projects__card {
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid;
+    padding: 30px 0;
+    text-align: center;
 }
+
+.projects-footer { 
+    margin-top: 15px;
+    text-align: center;
+}
+
+.project__card-wrap {
+    display: flex;
+    justify-content: center ;
+
+}
+
 .card {
     display: flex;
     justify-content: center;
     padding: 30px 0;
 }
 
+/* CONTACT SECTION  */
+
+.contact {
+    box-shadow: 0px 0px 20px navy;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.contact__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
 /* FOOTER SECTION  */
 
 .footer-section {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 15px;
     /* border: 1px solid yellow; */
@@ -338,14 +404,14 @@ body .twitter svg {
         display: flex;
         flex-direction: column;
         width: 100%;
-        font-weight: 400;
+        font-weight: 700;
         color: bisque;
         padding-bottom: 5px;
         margin-bottom: 5px;
     }
 
     .card-text {
-        color: bisque;
+        color: fuchsia;
     }
 
     .card-body {

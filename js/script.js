@@ -3,21 +3,18 @@ window.addEventListener("DOMContentLoaded", function(e) {
 
     const mainComponent = document.getElementById('page-wrap');
     const lottie = document.getElementById('lottie-pre');
-    const header = document.getElementById('header');
+    const header = document.querySelector('.header__navbar');
 
     function contentLoad() {
         setTimeout(() => {
-            header.classList.add("active");
-        }, 1000);
-        setTimeout(() => {
             mainComponent.classList.add("active");
-        }, 3000); 
+            header.classList.add("active");
+        }, 3500); 
         setTimeout(() => {
             lottie.classList.remove("active");
             lottie.classList.add("fade-out");
         }, 2000);
     }
     contentLoad();
-
     
   });
