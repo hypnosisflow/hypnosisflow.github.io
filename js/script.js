@@ -16,5 +16,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
         }, 2000);
     }
     contentLoad();
+
+    ScrollReveal().reveal('.about-section');
     
   });
