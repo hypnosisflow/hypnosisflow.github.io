@@ -112,13 +112,15 @@ nav {
     align-items: center;
     padding: 15px 15px;
     padding-top: 60px;
-    box-shadow: 5px 5px 20px blue;
+    /* box-shadow: 5px 5px 20px blue; */
     margin-top: 60px;
     background-color: rgba(0, 175, 255, .1);
 }
 
 .descr-title h1 {
     font-size: 40px;
+    text-decoration: underline;
+    color: Blue;
 }
 
 .descr-animation {
@@ -150,12 +152,12 @@ nav {
 .about-section {
     display: flex;
     flex-direction: row;
-    box-shadow: 5px 5px 20px blue;
+    /* box-shadow: 5px 5px 20px blue; */
     margin-top: 60px;
     background-color: rgba(0, 175, 255, .1);
 }
 .skills {
-    width: 50%;
+    width: 75%;
 }
 .skills-content {
     padding: 15px 0;
@@ -188,6 +190,7 @@ nav {
     text-decoration: underline;
     font-weight: 700;
     margin: 0 auto;
+    color: blue;
 }
 .skills-btn {
     margin-top: 30px;
@@ -201,6 +204,7 @@ nav {
     box-shadow: 0px 0px 20px blue; 
     padding: 30px 15px;
     margin-top: 30px;
+    background-color: rgba(0, 0, 0, .3);
     
 }
 .icons-row {
@@ -282,6 +286,12 @@ nav {
     margin-top: 60px;
     /* background-color: rgba(255, 255, 255, 1); */
 }
+.contact-title h2 {
+    margin-top: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: blue;
+}
 
 .contact__descr {
     display: flex;
@@ -301,7 +311,7 @@ nav {
     justify-content: center;
     padding: 15px;
     /* border: 1px solid yellow; */
-    box-shadow: 5px 5px 20px blue;
+    /* box-shadow: 5px 5px 20px blue; */
     margin-top: 60px;
     background-color: rgba(0, 175, 255, .1);
 }
@@ -336,11 +346,13 @@ nav {
     transition: all .5s ease-in-out
 }
 
-.stamp {
+.stamp, .stamp span {
     display: block;
     justify-content: center;
     text-align: center;
     font-weight: 400;
+    color: grey;
+    font-size: 14px;
 }
 
 /* SCRIPTS  */
