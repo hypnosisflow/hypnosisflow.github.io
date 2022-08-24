@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: black;
 }
 body {
@@ -132,14 +132,19 @@ nav {
 
 .descr-title h1 {
     font-size: 40px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: 900;
     color: blue;
 }
-.descr-text p {
+.descr-text p  {
     /* color: white; */
     font-weight: 400;
-    /* font-size: 18px; */
+    font-size: 14px;
+    background-color: rgba(0, 0, 155, 1);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 255, 1);
 }
 
 .descr-animation {
@@ -195,10 +200,16 @@ nav {
 }
 
 .skills-text {
-    padding-top: 15px;
-    /* font-size: 30px; */
-    /* text-align: center; */
-    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgba(0, 0, 155, 1);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 255, 1);
+}
+.skills-text span {
+    color: #fff;
 }
 
 .skills-title {
@@ -213,8 +224,8 @@ nav {
     border-radius: 1px;  
 }
 .skills-title h2 {
-    text-decoration: underline;
-    font-weight: 700;
+    /* text-decoration: underline; */
+    font-weight: 900;
     margin: 0 auto;
     color: blue;
 }
@@ -265,16 +276,17 @@ nav {
     align-items: center;
 }
 .projects-btn {
-    width: 150px;
-    padding: 8px 36px;
+    width: 100px;
+    padding: 5px 35px;
     margin-top: 10px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: all .5s ease-in-out;
     font-weight: 600;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
+    /* background-color: goldenrod; */
     color: black;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    box-shadow: 3px 1px 5px rgba(0, 0, 0, 1);
 }
 .projects-btn:hover {
     background-color: blue;
@@ -343,7 +355,7 @@ nav {
 .contact-title h2 {
     margin-top: 30px;
     font-weight: 700;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: blue;
 }
 
@@ -354,8 +366,18 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
-
-
+.contact-text {
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgba(0, 0, 155, 1);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 255, 1);
+}
+.contact-text span {
+    color: #fff;
+}
 
 /* FOOTER SECTION  */
 
@@ -385,6 +407,12 @@ nav {
     vertical-align: middle;
     
 }
+.footer-links-item {
+    background-color: orange;
+    margin: 10px 3px;
+    border-radius: 5px;
+
+}
 
 .footer-links ul {
     display: flex;
@@ -396,7 +424,7 @@ nav {
 
 .footer-links ul li a {
     color: blue;
-    padding: 15px 25px;
+    padding: 15px 10px;
     font-size: 24px;
     text-decoration: none;
     transition: all .5s ease-in-out
